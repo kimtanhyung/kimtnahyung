@@ -7,19 +7,21 @@
     <title>BMW 홈페이지</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css.01.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <!-- Swiper JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         window.onload = () => {
+            AOS.init();
+
             var swiper = new Swiper(".visual-swiper", {
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                autoplay: {
+                    delay: 3000, //2.5
+                    disableOnInteraction: false,
                 },
-                // autoplay: {
-                //     delay: 3000, //2.5
-                //     disableOnInteraction: false,
-                // },
             });
             var swiper = new Swiper(".item_box", {
                 navigation: {
@@ -33,6 +35,34 @@
                     clickable: true,
                 },
             });
+
+            var swiper = new Swiper(".item_box-02", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+
+            var swiper = new Swiper(".item_box-03", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+
+
         }
 
     </script><!-- script end -->
@@ -87,90 +117,85 @@
                     </div><!-- .util end -->
                 </div><!-- .nav end -->
             </div><!-- .inner end -->
+        </div><!-- .header end -->
+
+        <main class="main">
+            <div class="swiper visual-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <img src="img/main/main1.jpg" alt="">
+                        </div><!-- .image end -->
+                        <div class="item_wrap">
+                            <div class="title">
+                                <div class="text">
+                                    <h1>BMW 파로나믹 iDrive</h1>
+                                    <p>새로운 나만의 주행</p>
+                                    <div class="main_btn">
+                                        <div class="but">
+                                            <a href="#">
+                                                <span>신승 신청 예약하기</span>
+                                            </a>
+                                        </div><!-- .but end -->
+                                    </div><!-- .main_btn -->
+
+                                </div><!-- .text -->
+                            </div><!-- .title end -->
+
+                        </div><!-- .item_wrap -->
+
+                    </div> <!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <img src="img/main/main2.jpg" alt="이미지">
+                        </div><!-- .image end -->
+                        <div class="item_wrap">
+                            <div class="title">
+                                <div class="text">
+                                    <h1>BMW 파로나믹 iDrive</h1>
+                                    <p>새로운 나만의 주행</p>
+                                    <div class="main_btn">
+                                        <div class="but">
+                                            <a href="#">
+                                                <span>신승 신청 예약하기</span>
+                                            </a>
+                                        </div><!-- .but end -->
+                                    </div><!-- .main_btn -->
+
+                                </div><!-- .text -->
+                            </div><!-- .title end -->
+
+                        </div><!-- .item_wrap -->
+
+                    </div> <!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <img src="img/main/main3.jpg" alt="">
+                        </div><!-- .image end -->
+                        <div class="item_wrap">
+                            <div class="title">
+                                <div class="text">
+                                    <h1>BMW 파로나믹 iDrive</h1>
+                                    <p>새로운 나만의 주행</p>
+                                    <div class="main_btn">
+                                        <div class="but">
+                                            <a href="#">
+                                                <span>신승 신청 예약하기</span>
+                                            </a>
+                                        </div><!-- .but end -->
+                                    </div><!-- .main_btn -->
+
+                                </div><!-- .text -->
+                            </div><!-- .title end -->
+
+                        </div><!-- .item_wrap -->
+                    </div> <!-- .swiper-slide end -->
+
+                </div><!-- swiper visual-swiper end -->
 
 
-            <main class="main">
-
-                <div class="swiper visual-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="image">
-                                <img src="img/main/main1.jpg" alt="">
-                            </div><!-- .image end -->
-                            <div class="item_wrap">
-                                <div class="title">
-                                    <div class="text">
-                                        <h1>BMW 파로나믹 iDrive</h1>
-                                        <p>새로운 나만의 주행</p>
-                                        <div class="main_btn">
-                                            <div class="but">
-                                                <a href="#">
-                                                    <span>신승 신청 예약하기</span>
-                                                </a>
-                                            </div><!-- .but end -->
-                                        </div><!-- .main_btn -->
-
-                                    </div><!-- .text -->
-                                </div><!-- .title end -->
-
-                            </div><!-- .item_wrap -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div> <!-- .swiper-slide end -->
-
-                        <div class="swiper-slide">
-                            <div class="image">
-                                <img src="img/main/main2.jpg" alt="">
-                            </div><!-- .image end -->
-                            <div class="item_wrap">
-                                <div class="title">
-                                    <div class="text">
-                                        <h1>BMW 파로나믹 iDrive</h1>
-                                        <p>새로운 나만의 주행</p>
-                                        <div class="main_btn">
-                                            <div class="but">
-                                                <a href="#">
-                                                    <span>신승 신청 예약하기</span>
-                                                </a>
-                                            </div><!-- .but end -->
-                                        </div><!-- .main_btn -->
-
-                                    </div><!-- .text -->
-                                </div><!-- .title end -->
-
-                            </div><!-- .item_wrap -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div> <!-- .swiper-slide end -->
-
-                        <div class="swiper-slide">
-                            <div class="image">
-                                <img src="img/main/main3.jpg" alt="">
-                            </div><!-- .image end -->
-                            <div class="item_wrap">
-                                <div class="title">
-                                    <div class="text">
-                                        <h1>BMW 파로나믹 iDrive</h1>
-                                        <p>새로운 나만의 주행</p>
-                                        <div class="main_btn">
-                                            <div class="but">
-                                                <a href="#">
-                                                    <span>신승 신청 예약하기</span>
-                                                </a>
-                                            </div><!-- .but end -->
-                                        </div><!-- .main_btn -->
-
-                                    </div><!-- .text -->
-                                </div><!-- .title end -->
-
-                            </div><!-- .item_wrap -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div> <!-- .swiper-slide end -->
-
-                    </div><!-- swiper visual-swiper end -->
-
-                </div><!-- .main end  -->
 
                 <div class="section">
                     <section class="sub_title">
@@ -179,7 +204,7 @@
                     </section><!-- .sub_title end -->
                 </div><!-- .section end -->
 
-                <div class="section-01">
+                <div class="section-01" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="image">
                         <div class="img">
                             <img src="img/section/외부.webp" alt="외부">
@@ -199,7 +224,7 @@
                     </div><!-- .image -->
                 </div><!-- .section-01 end-->
 
-                <div class="section-02">
+                <div class="section-02" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="container">
                         <div class="sub_text-02">
                             <p>퍼스트 클래스를 담은 인테리어 공간</p>
@@ -211,9 +236,6 @@
                                     <a href="#">더 알아보기 ></a>
                                 </div><!-- .sub_btn end -->
                         </div><!-- .sub_text-02 -->
-
-
-
 
                         <div class="image_box">
                             <div class="img">
@@ -233,9 +255,10 @@
                     </div><!-- .content -->
                     <div class="swiper item_box">
                         <div class="swiper-wrapper">
+
                             <div class="swiper-slide">
                                 <div class="image">
-                                    <img src="img/i/1.png" alt="순수전기">
+                                    <a href="#"><img src="img/i/1.png" alt="순수전기"></a>
                                 </div><!-- .image end -->
 
                                 <div class="perview">
@@ -250,85 +273,573 @@
                                             <div class="span_text">
                                                 <span>트랜스 미션</span>
                                                 <p>자동</p>
-                                            </div><!-- .spans text -->
+                                            </div><!-- .span_text -->
                                         </div><!-- .span end -->
-                                    </div><!-- .perview_text end -->
-                                </div><!-- .perview end-->
 
-                            </div><!-- .swiper-slide end -->
+                                        <div class="button">
+                                            <div class="btn-02">
+                                                <a href="#">
+                                                    <p>더 보기</p>
+                                                    <div class="image-02">
+                                                        <img src="img/img/이모티콘/화살표.png" alt="화살표">
+                                                    </div><!-- .image-02 end -->
+                                                </a>
+                                            </div><!-- .image end -->
+                                        </div><!-- .btn end -->
+
+                                    </div><!-- .button end -->
+
+                                </div><!-- .perview_text end -->
+                            </div><!-- .swiper-slide end-->
 
                             <div class="swiper-slide">
                                 <div class="image">
-                                    <img src="img/i/2.png" alt="순수전기">
+                                    <a href="#"><img src="img/i/2.png" alt="순수전기"></a>
                                 </div><!-- .image end -->
 
                                 <div class="perview">
                                     <div class="perview_text">
                                         <div class="title">
-                                            <h2>BMW i7 xDrive60</h2>
+                                            <h2>BMW i7 M70 xDrive</h2>
                                             <p>순수 전기</p>
-                                            <strong>₩212,100,000원 부터</strong>
+                                            <strong>₩232,200,000원 부터</strong>
                                         </div> <!-- .title end -->
 
                                         <div class="span">
                                             <div class="span_text">
                                                 <span>트랜스 미션</span>
                                                 <p>자동</p>
-                                            </div><!-- .spans text -->
+                                            </div><!-- .span_text -->
                                         </div><!-- .span end -->
-                                    </div><!-- .perview_text end -->
-                                </div><!-- .perview end-->
 
-                            </div><!-- .swiper-slide end -->
+                                        <div class="button">
+                                            <div class="btn-02">
+                                                <a href="#">
+                                                    <p>더 보기</p>
+                                                    <div class="image-02">
+                                                        <img src="img/img/이모티콘/화살표.png" alt="화살표">
+                                                    </div><!-- .image-02 end -->
+                                                </a>
+                                            </div><!-- .image end -->
+                                        </div><!-- .btn end -->
 
-                            <div class="swiper-slide">
-                                <div class="dami">
-                                     <div class="image">
-                                    <img src="img/i/3.png" alt="휘발유">
-                                </div><!-- .image end -->
+                                    </div><!-- .button end -->
 
-                                <div class="perview">
-                                    <div class="perview_text">
-                                        <div class="title">
-                                            <h2>BMW i7 xDrive60</h2>
-                                            <p>휘발유</p>
-                                            <strong>₩68,700,000원 부터</strong>
-                                        </div> <!-- .title end -->
-
-                                        <div class="span">
-                                            <div class="span_text">
-                                                <span>트랜스 미션</span>
-                                                <p>기어시프트 패들 오토매틱 트랜스미션</p>
-                                            </div><!-- .spans text -->
-                                        </div><!-- .span end -->
-                                    </div><!-- .perview_text end -->
-                                </div><!-- .perview end-->
-                            </div><!-- .dami end -->
-                            </div><!-- .swiper-slide end -->
+                                </div><!-- .perview_text end -->
+                            </div><!-- .swiper-slide end-->
 
                             <div class="swiper-slide">
                                 <div class="image">
-                                    <img src="img/i/4.png" alt="휘발유">
+                                    <a href="#"><img src="img/i/3.png" alt="휘발유"></a>
                                 </div><!-- .image end -->
 
                                 <div class="perview">
                                     <div class="perview_text">
-                                        <div class="title">
-                                            <h2>BMW i7 xDrive60</h2>
+                                        <div class="title-02">
+                                            <h2>BMW 520i</h2>
                                             <p>휘발유</p>
                                             <strong>₩68,700,000원 부터</strong>
                                         </div> <!-- .title end -->
 
                                         <div class="span">
                                             <div class="span_text">
+
                                                 <span>트랜스 미션</span>
                                                 <p>기어시프트 패들 오토매틱 트랜스미션</p>
-                                            </div><!-- .spans text -->
+
+                                            </div><!-- .span_text -->
                                         </div><!-- .span end -->
-                                    </div><!-- .perview_text end -->
-                                </div><!-- .perview end-->
 
-                            </div><!-- .swiper-slide end -->
+                                        <div class="button">
+                                            <div class="btn-02">
+                                                <a href="#">
+                                                    <p>더 보기</p>
+                                                    <div class="image-02">
+                                                        <img src="img/img/이모티콘/화살표.png" alt="화살표">
+                                                    </div><!-- .image-02 end -->
+                                                </a>
+                                            </div><!-- .image end -->
+                                        </div><!-- .btn end -->
+
+                                    </div><!-- .button end -->
+
+                                </div><!-- .perview_text end -->
+                            </div><!-- .swiper-slide end-->
+
+
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <a href="#"><img src="img/i/4.png" alt="휘발유"></a>
+                                </div><!-- .image end -->
+
+                                <div class="perview">
+                                    <div class="perview_text">
+                                        <div class="title-02">
+                                            <h2>BMW i5 M60</h2>
+                                            <p>휘발유</p>
+                                            <strong>₩68,700,000원 부터</strong>
+                                        </div> <!-- .title end -->
+
+                                        <div class="span">
+                                            <div class="span_text">
+
+                                                <span>트랜스 미션</span>
+                                                <p>기어시프트 패들 오토매틱 트랜스미션</p>
+
+                                            </div><!-- .span_text -->
+                                        </div><!-- .span end -->
+
+                                        <div class="button">
+                                            <div class="btn-02">
+                                                <a href="#">
+                                                    <p>더 보기</p>
+                                                    <div class="image-02">
+                                                        <img src="img/img/이모티콘/화살표.png" alt="화살표">
+                                                    </div><!-- .image-02 end -->
+                                                </a>
+                                            </div><!-- .image end -->
+                                        </div><!-- .btn end -->
+
+                                    </div><!-- .button end -->
+
+                                </div><!-- .perview_text end -->
+                            </div><!-- .swiper-slide end-->
+
+
+                        </div><!-- .swiper-wrapper end -->
+                    </div><!-- .swiper item_box end -->
+
+                    <div class="swiper item_box-02">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <a href="#"><img src="img/X/x3.png" alt="휘발유"></a>
+                                </div><!-- .image end -->
+
+                                <div class="perview">
+                                    <div class="perview_text">
+                                        <div class="title-02">
+                                            <h2>BMW X3 20 xDrive</h2>
+                                            <p>휘발유</p>
+                                            <strong>₩68,700,000원 부터</strong>
+                                        </div> <!-- .title end -->
+
+                                        <div class="span">
+                                            <div class="span_text">
+
+                                                <span>트랜스 미션</span>
+                                                <p>기어시프트 패들 오토매틱 트랜스미션</p>
+
+                                            </div><!-- .span_text -->
+                                        </div><!-- .span end -->
+
+                                        <div class="button">
+                                            <div class="btn-02">
+                                                <a href="#">
+                                                    <p>더 보기</p>
+                                                    <div class="image-02">
+                                                        <img src="img/img/이모티콘/화살표.png" alt="화살표">
+                                                    </div><!-- .image-02 end -->
+                                                </a>
+                                            </div><!-- .image end -->
+                                        </div><!-- .btn end -->
+
+                                    </div><!-- .button end -->
+
+                                </div><!-- .perview_text end -->
+                            </div><!-- .swiper-slide end-->
+
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <a href="#"><img src="img/X/x4.png" alt="경유"></a>
+                                </div><!-- .image end -->
+
+                                <div class="perview">
+                                    <div class="perview_text">
+                                        <div class="title-03">
+                                            <h2>BMW X4 xDrive20d</h2>
+                                            <p>경유</p>
+                                            <strong>₩82,3000,000원 부터</strong>
+                                        </div> <!-- .title end -->
+
+                                        <div class="span">
+                                            <div class="span_text">
+
+                                                <span>트랜스 미션</span>
+                                                <p>기어시프트 패들 오토매틱 트랜스미션</p>
+
+                                            </div><!-- .span_text -->
+                                        </div><!-- .span end -->
+
+                                        <div class="button">
+                                            <div class="btn-02">
+                                                <a href="#">
+                                                    <p>더 보기</p>
+                                                    <div class="image-02">
+                                                        <img src="img/img/이모티콘/화살표.png" alt="화살표">
+                                                    </div><!-- .image-02 end -->
+                                                </a>
+                                            </div><!-- .image end -->
+                                        </div><!-- .btn end -->
+
+                                    </div><!-- .button end -->
+
+                                </div><!-- .perview_text end -->
+                            </div><!-- .swiper-slide end-->
+
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <a href="#"><img src="img/X/x5.png" alt="경유"></a>
+                                </div><!-- .image end -->
+
+                                <div class="perview">
+                                    <div class="perview_text">
+                                        <div class="title-03">
+                                            <h2>BMW X5 xDrive30d</h2>
+                                            <p>경유</p>
+                                            <strong>₩117,800,000원 부터</strong>
+                                        </div> <!-- .title end -->
+
+                                        <div class="span">
+                                            <div class="span_text">
+
+                                                <span>트랜스 미션</span>
+                                                <p>스텝트로닉 스포츠 트랜스미션</p>
+
+                                            </div><!-- .span_text -->
+                                        </div><!-- .span end -->
+
+                                        <div class="button">
+                                            <div class="btn-02">
+                                                <a href="#">
+                                                    <p>더 보기</p>
+                                                    <div class="image-02">
+                                                        <img src="img/img/이모티콘/화살표.png" alt="화살표">
+                                                    </div><!-- .image-02 end -->
+                                                </a>
+                                            </div><!-- .image end -->
+                                        </div><!-- .btn end -->
+
+                                    </div><!-- .button end -->
+
+                                </div><!-- .perview_text end -->
+                            </div><!-- .swiper-slide end-->
+
+
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <a href="#"><img src="img/X/x6.png" alt="경유"></a>
+                                </div><!-- .image end -->
+
+                                <div class="perview">
+                                    <div class="perview_text">
+                                        <div class="title-03">
+                                            <h2>BMW X6 xDrive30d</h2>
+                                            <p>경유</p>
+                                            <strong>₩126,500,000원 부터</strong>
+                                        </div> <!-- .title end -->
+
+                                        <div class="span">
+                                            <div class="span_text">
+
+                                                <span>트랜스 미션</span>
+                                                <p>자동</p>
+
+                                            </div><!-- .span_text -->
+                                        </div><!-- .span end -->
+
+                                        <div class="button">
+                                            <div class="btn-02">
+                                                <a href="#">
+                                                    <p>더 보기</p>
+                                                    <div class="image-02">
+                                                        <img src="img/img/이모티콘/화살표.png" alt="화살표">
+                                                    </div><!-- .image-02 end -->
+                                                </a>
+                                            </div><!-- .image end -->
+                                        </div><!-- .btn end -->
+
+                                    </div><!-- .button end -->
+
+                                </div><!-- .perview_text end -->
+                            </div><!-- .swiper-slide end-->
+
+
+                        </div><!-- .swiper-wrapper end -->
+
+
+
+                    </div><!-- .swiper item_box-02 end -->
+
+                    <div class="swiper item_box-03">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <a href="#"><img src="img/쿠페/8쿠페.png" alt="8쿠페"></a>
+                                </div><!-- .image end -->
+
+                                <div class="perview">
+                                    <div class="perview_text">
+                                        <div class="title-02">
+                                            <h2>BMW M850i xDrive 쿠페</h2>
+                                            <p>휘발유</p>
+                                            <strong>₩150,700,000원 부터</strong>
+                                        </div> <!-- .title end -->
+
+                                        <div class="span">
+                                            <div class="span_text">
+
+                                                <span>트랜스 미션</span>
+                                                <p>자동</p>
+
+                                            </div><!-- .span_text -->
+                                        </div><!-- .span end -->
+
+                                        <div class="button">
+                                            <div class="btn-02">
+                                                <a href="#">
+                                                    <p>더 보기</p>
+                                                    <div class="image-02">
+                                                        <img src="img/img/이모티콘/화살표.png" alt="화살표">
+                                                    </div><!-- .image-02 end -->
+                                                </a>
+                                            </div><!-- .image end -->
+                                        </div><!-- .btn end -->
+
+                                    </div><!-- .button end -->
+
+                                </div><!-- .perview_text end -->
+                            </div><!-- .swiper-slide end-->
+
+
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <a href="#"><img src="img/쿠페/그란쿠페.png" alt="그란쿠페"></a>
+                                </div><!-- .image end -->
+
+                                <div class="perview">
+                                    <div class="perview_text">
+                                        <div class="title-02">
+                                            <h2>BMW M850i xDrive 그란 쿠페</h2>
+                                            <p>휘발유</p>
+                                            <strong>₩146,700,000원 부터</strong>
+                                        </div> <!-- .title end -->
+
+                                        <div class="span">
+                                            <div class="span_text">
+
+                                                <span>트랜스 미션</span>
+                                                <p>자동</p>
+
+                                            </div><!-- .span_text -->
+                                        </div><!-- .span end -->
+
+                                        <div class="button">
+                                            <div class="btn-02">
+                                                <a href="#">
+                                                    <p>더 보기</p>
+                                                    <div class="image-02">
+                                                        <img src="img/img/이모티콘/화살표.png" alt="화살표">
+                                                    </div><!-- .image-02 end -->
+                                                </a>
+                                            </div><!-- .image end -->
+                                        </div><!-- .btn end -->
+
+                                    </div><!-- .button end -->
+
+                                </div><!-- .perview_text end -->
+                            </div><!-- .swiper-slide end-->
+
+
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <a href="#"><img src="img/쿠페/컴페티션.png" alt="컴페티션"></a>
+                                </div><!-- .image end -->
+
+                                <div class="perview">
+                                    <div class="perview_text">
+                                        <div class="title-02">
+                                            <h2>BMW M8 컴베티션 쿠페</h2>
+                                            <p>휘발유</p>
+                                            <strong>₩248,200,000원 부터</strong>
+                                        </div> <!-- .title end -->
+
+                                        <div class="span">
+                                            <div class="span_text">
+
+                                                <span>트랜스 미션</span>
+                                                <p>자동</p>
+
+                                            </div><!-- .span_text -->
+                                        </div><!-- .span end -->
+
+                                        <div class="button">
+                                            <div class="btn-02">
+                                                <a href="#">
+                                                    <p>더 보기</p>
+                                                    <div class="image-02">
+                                                        <img src="img/img/이모티콘/화살표.png" alt="화살표">
+                                                    </div><!-- .image-02 end -->
+                                                </a>
+                                            </div><!-- .image end -->
+                                        </div><!-- .btn end -->
+
+                                    </div><!-- .button end -->
+
+                                </div><!-- .perview_text end -->
+                            </div><!-- .swiper-slide end-->
+
+
+
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <a href="#"><img src="img/쿠페/m3쿠페.png" alt=" 쿠페"></a>
+                                </div><!-- .image end -->
+
+                                <div class="perview">
+                                    <div class="perview_text">
+                                        <div class="title-02">
+                                            <h2>BMW M2 쿠페</h2>
+                                            <p>휘발유</p>
+                                            <strong>₩90,300,000원 부터</strong>
+                                        </div> <!-- .title end -->
+
+                                        <div class="span">
+                                            <div class="span_text">
+
+                                                <span>트랜스 미션</span>
+                                                <p>스텝트로닉 스포츠 트랜스미션</p>
+
+                                            </div><!-- .span_text -->
+                                        </div><!-- .span end -->
+
+                                        <div class="button">
+                                            <div class="btn-02">
+                                                <a href="#">
+                                                    <p>더 보기</p>
+                                                    <div class="image-02">
+                                                        <img src="img/img/이모티콘/화살표.png" alt="화살표">
+                                                    </div><!-- .image-02 end -->
+                                                </a>
+                                            </div><!-- .image end -->
+                                        </div><!-- .btn end -->
+
+                                    </div><!-- .button end -->
+
+                                </div><!-- .perview_text end -->
+                            </div><!-- .swiper-slide end-->
+
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <a href="#"><img src="img/쿠페/m2_240i쿠페.png" alt="m2 쿠페"></a>
+                                </div><!-- .image end -->
+
+                                <div class="perview">
+                                    <div class="perview_text">
+                                        <div class="title-02">
+                                            <h2>BMW M240i xDrive 쿠페</h2>
+                                            <p>휘발유</p>
+                                            <strong>₩73,100,000원 부터</strong>
+                                        </div> <!-- .title end -->
+
+                                        <div class="span">
+                                            <div class="span_text">
+
+                                                <span>트랜스 미션</span>
+                                                <p>스텝트로닉 스포츠 트랜스미션</p>
+
+                                            </div><!-- .span_text -->
+                                        </div><!-- .span end -->
+
+                                        <div class="button">
+                                            <div class="btn-02">
+                                                <a href="#">
+                                                    <p>더 보기</p>
+                                                    <div class="image-02">
+                                                        <img src="img/img/이모티콘/화살표.png" alt="화살표">
+                                                    </div><!-- .image-02 end -->
+                                                </a>
+                                            </div><!-- .image end -->
+                                        </div><!-- .btn end -->
+
+                                    </div><!-- .button end -->
+
+                                </div><!-- .perview_text end -->
+                            </div><!-- .swiper-slide end-->
+
+
+
+                        </div><!-- .swiper-wrapper end -->
+
+
+
+                    </div><!-- .swiper item_box-03 end -->
+
+
+
+                </section> <!-- .item -->
+
+            </div><!-- wiper visual-swiper -->
+
+        </main><!-- .main end -->
+
+        <footer class="footer">
+            <div class="inner">
+                <div class="fot_text">
+                    <p>사업자 등록 정보</p>
+                    <div class="roral">
+                        <div class="sub_text-02">
+                            <a href="#"><p>개인(위치)정보 처리방침</p></a>
+                             <a href="#"><p>개인정보 처리방침 변경에 대한 안내</p></a>
+                        </div><!-- .roral end -->
+                    </div><!-- .fot_text end -->
+
+                </div><!-- .inner -->
+
+                <div class="impormation">
+                    <div class="data">
+                        <p>사업자 등록 번호 </p>
+                        <span>211-86-08963</span>
+                    </div><!-- .data end -->
+
+                    <div class="sever">
+                        <p>통신판매신고번호 </p>
+                        <span>2014-서울중구-0829 </span>
+                    </div><!-- .data end -->
+
+                    <div class="name">
+                        <p>대표이사</p>
+                        <span>한상윤</span>
+                    </div><!-- .name end -->
+
+                    <div class="adress">
+                        <p>대표전화</p>
+                        <span>080-700-8000</span>
+                    </div><!-- .adress end -->
+
+                    <div class="email">
+                        <p>이메일</p>
+                        <span>bmw@bmw.co.kr</span>
+                    </div><!-- .adress end -->
+
+                    <div class="ser">
+                        <p>사업자등록정보확인</p>
+                    </div><!-- .adress end -->
+
+                     <div class="CPY">
+                        <p>©BMW Korea 2025</p>
+                    </div><!-- .adress end -->
+
+
+
+                </div><!-- .impormation end -->
+
+
+
+
+        </footer><!-- .footer end -->
 
 
 
@@ -337,14 +848,6 @@
 
 
 
-
-
-
-                        </div><!-- .swiper-wapper end -->
-
-                    </div><!-- item_box end -->
-
-        </div><!-- .item end -->
 
 
 
